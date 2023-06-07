@@ -18,4 +18,9 @@ class Product extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function type(): BelongsTo
+    {
+        return $this->belongsTo(Type::class);
+    }
 }
